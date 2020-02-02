@@ -4,3 +4,11 @@
   height: 100vh;
   padding-top: 20px;
 }
+
+.svg-container {
+  border-radius: 20px !important;
+}
+
+.main-svg {
+  border-radius: 20px !important;
+}

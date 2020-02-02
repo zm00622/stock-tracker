@@ -18,7 +18,7 @@ class Stock extends React.Component {
     const pointerToThis = this;
     console.log(pointerToThis);
     const API_KEY = process.env.API_KEY;
-    let StockSymbol = 'TQQQ';
+    let StockSymbol = 'TSLA';
     let API_Call = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=${StockSymbol}&outputsize=compact&apikey=${API_KEY}`;
     let stockChartXValuesFunction = [];
     let stockChartYValuesFunction = [];
@@ -48,10 +48,11 @@ class Stock extends React.Component {
       )
   }
 
+
+
   render() {
     return (
       <div>
-
         <h1>React Stock Market App</h1>
         <Plot
           data={[
@@ -59,15 +60,19 @@ class Stock extends React.Component {
               x: this.state.stockChartXValues,
               y: this.state.stockChartYValues,
               type: 'scatter',
+              // fill: 'tozeroy',
               mode: 'lines+markers',
-              marker: {color: '#08cf98'},
+              marker: {
+                color: '#08cf98',
+                symbol: "cross-thin"
+              },
             }
           ]}
           layout={
             {
               width: 720,
               height: 440,
-              title: '100 Day Chart for Ticker "TQQQ"',
+              title: '100 Day Chart for Ticker "TSLA"',
               paper_bgcolor: "#F2F2F2",
               plot_bgcolor: "#36474f",
               xaxis: {
