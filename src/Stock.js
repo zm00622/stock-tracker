@@ -23,6 +23,7 @@ class Stock extends React.Component {
     let stockChartXValuesFunction = [];
     let stockChartYValuesFunction = [];
 
+
     fetch(API_Call)
       .then(
         function(response) {
@@ -50,6 +51,7 @@ class Stock extends React.Component {
   render() {
     return (
       <div>
+
         <h1>React Stock Market App</h1>
         <Plot
           data={[
@@ -58,10 +60,30 @@ class Stock extends React.Component {
               y: this.state.stockChartYValues,
               type: 'scatter',
               mode: 'lines+markers',
-              marker: {color: 'blue'},
+              marker: {color: '#08cf98'},
             }
           ]}
-          layout={{width: 720, height: 440, title: 'A Fancy Plot'}}
+          layout={
+            {
+              width: 720,
+              height: 440,
+              title: '100 Day Chart for Ticker "TQQQ"',
+              paper_bgcolor: "#F2F2F2",
+              plot_bgcolor: "#36474f",
+              xaxis: {
+                color: "#08cf98",
+              },
+              yaxis: {
+                color: "#08cf98"
+              },
+              margin: {
+                pad: 20,
+              },
+              font: {
+                color: "#08cf98",
+              },
+            }
+          }
         />
       </div>
     )
@@ -69,3 +91,10 @@ class Stock extends React.Component {
 }
 
 export default Stock;
+
+
+// DEFAULT_CHART_CONFIG = { {modeBarButtons: [ 'sendDataToCloud' ] } }
+
+// config = {
+//   Stock.newPlot({showSendToCloud: true})
+// }
