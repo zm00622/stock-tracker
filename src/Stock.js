@@ -18,7 +18,7 @@ class Stock extends React.Component {
     const pointerToThis = this;
     console.log(pointerToThis);
     const API_KEY = process.env.API_KEY;
-    let StockSymbol = 'FB';
+    let StockSymbol = 'TQQQ';
     let API_Call = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=${StockSymbol}&outputsize=compact&apikey=${API_KEY}`;
     let stockChartXValuesFunction = [];
     let stockChartYValuesFunction = [];
@@ -50,7 +50,7 @@ class Stock extends React.Component {
   render() {
     return (
       <div>
-        <h1>Stock Market</h1>
+        <h1>React Stock Market App</h1>
         <Plot
           data={[
             {
@@ -58,7 +58,7 @@ class Stock extends React.Component {
               y: this.state.stockChartYValues,
               type: 'scatter',
               mode: 'lines+markers',
-              marker: {color: 'red'},
+              marker: {color: 'blue'},
             }
           ]}
           layout={{width: 720, height: 440, title: 'A Fancy Plot'}}
