@@ -1,14 +1,17 @@
 import React from 'react';
 import Plot from 'react-plotly.js';
 
+
 class Stock extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       stockChartXValues: [],
-      stockChartYValues: []
+      stockChartYValues: [],
     }
   }
+
+
 
   componentDidMount() {
     this.fetchStock();
@@ -44,16 +47,28 @@ class Stock extends React.Component {
             stockChartXValues: stockChartXValuesFunction,
             stockChartYValues: stockChartYValuesFunction
           });
-        }
-      )
+        } )
   }
 
-
-
   render() {
+
+    function handleSubmit (e) {
+      e.preventDefault()
+      var InputBoxValue = document.getElementById("InputBox").value;
+      document.getElementById("DisplayText").innerHTML=InputBoxValue;
+
+      // Add code for inproper input error here
+    }
+
     return (
       <div>
         <h1>React Stock Market App</h1>
+        <form onSubmit={handleSubmit}>
+          <h1>Enter your Ticker</h1>
+          <input id="InputBox" type="text"></input>
+          <button>Submit</button>
+          <h3 id="DisplayText"></h3>
+        </form>
         <Plot
           data={[
             {
