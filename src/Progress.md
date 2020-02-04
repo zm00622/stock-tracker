@@ -1,3 +1,6 @@
+The following code was an attempt at getting Stock.js to display the stock that the user inputs as the ticker. Unfortunately, this code did not work. I am still trying to figure out how to get the StockSymbol to equal the user input.
+
+
 import React from 'react';
 import Plot from 'react-plotly.js';
 
@@ -114,14 +117,3 @@ class Stock extends React.Component {
 }
 
 export default Stock;
-
-
-
-
-
-
-// DEFAULT_CHART_CONFIG = { {modeBarButtons: [ 'sendDataToCloud' ] } }
-
-// config = {
-//   Stock.newPlot({showSendToCloud: true})
-// }
