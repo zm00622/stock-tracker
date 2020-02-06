@@ -12,3 +12,22 @@
 .main-svg {
   border-radius: 20px !important;
 }
+
+.ticker-submit-btn {
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+.ticker-input-box {
+  border: 1px solid limegreen;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.ticker-input-box:focus {
+  outline: none;
+  border: 1px solid limegreen;
+  box-shadow: 3px 3px 3px limegreen;
+  border-radius: 5px;
+  text-align: center;
+}

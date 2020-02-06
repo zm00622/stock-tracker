@@ -50,8 +50,9 @@ class Stock extends React.Component {
        <div>
          <h1>React Stock Market App</h1>
            <h1>Enter your Ticker</h1>
-           <input id="ticker" type="text"></input>
-           <button id="submit" onClick={this.fetchStock.bind(this)}>Submit</button>
+           <input id="ticker" class="ticker-input-box" type="text"></input>
+           <br></br>
+           <button class="ticker-submit-btn" id="submit" onClick={this.fetchStock.bind(this)}>Enter</button>
            <h3 id="DisplayText"></h3>
          <Plot
            data={[
