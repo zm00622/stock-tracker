@@ -48,7 +48,7 @@ class Stock extends React.Component {
 
      return (
        <div>
-         <h1>Zarys React Stock Market App</h1>
+         <h1>React Stock Market App</h1>
            <h1>Enter your Ticker</h1>
            <input id="ticker" type="text"></input>
            <button id="submit" onClick={this.fetchStock.bind(this)}>Submit</button>
@@ -71,7 +71,7 @@ class Stock extends React.Component {
              {
                width: 720,
                height: 440,
-               title: '100 Day Chart for Ticker "TSLA"',
+               title: '100 Day Chart (Daily Opens)',
                paper_bgcolor: "#F2F2F2",
                plot_bgcolor: "#36474f",
                xaxis: {
@@ -89,6 +89,8 @@ class Stock extends React.Component {
              }
            }
          />
+         <h6>This app was created by Zary G. Manning</h6>
+         <h6>The stock API was provided by Alpha Vantage and the chart library by Plotly. Source code can be found here: https://github.com/zm00622/stock-tracker</h6>
        </div>
      )
    }
