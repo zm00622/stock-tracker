@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/stock-tracker/static/css/main.fee41e05.chunk.css",
-    "main.js": "/stock-tracker/static/js/main.08829af7.chunk.js",
-    "main.js.map": "/stock-tracker/static/js/main.08829af7.chunk.js.map",
+    "main.js": "/stock-tracker/static/js/main.b084fc17.chunk.js",
+    "main.js.map": "/stock-tracker/static/js/main.b084fc17.chunk.js.map",
     "runtime-main.js": "/stock-tracker/static/js/runtime-main.8688630e.js",
     "runtime-main.js.map": "/stock-tracker/static/js/runtime-main.8688630e.js.map",
     "static/js/2.2b5ed9f0.chunk.js": "/stock-tracker/static/js/2.2b5ed9f0.chunk.js",
     "static/js/2.2b5ed9f0.chunk.js.map": "/stock-tracker/static/js/2.2b5ed9f0.chunk.js.map",
     "index.html": "/stock-tracker/index.html",
-    "precache-manifest.0b06d6eae722986d1ab328db97e6d02a.js": "/stock-tracker/precache-manifest.0b06d6eae722986d1ab328db97e6d02a.js",
+    "precache-manifest.2c0619c95d05cfc207f11e6288aea716.js": "/stock-tracker/precache-manifest.2c0619c95d05cfc207f11e6288aea716.js",
     "service-worker.js": "/stock-tracker/service-worker.js",
     "static/css/main.fee41e05.chunk.css.map": "/stock-tracker/static/css/main.fee41e05.chunk.css.map",
     "static/js/2.2b5ed9f0.chunk.js.LICENSE.txt": "/stock-tracker/static/js/2.2b5ed9f0.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.8688630e.js",
     "static/js/2.2b5ed9f0.chunk.js",
     "static/css/main.fee41e05.chunk.css",
-    "static/js/main.08829af7.chunk.js"
+    "static/js/main.b084fc17.chunk.js"
   ]
 }
